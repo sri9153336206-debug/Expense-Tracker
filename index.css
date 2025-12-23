@@ -142,6 +142,7 @@ li.expense{
 }
 
 .delete{
+    width: auto;
     background: red;
     color: #fff;
     border: none;
@@ -219,3 +220,4 @@ li.expense{
     font-size: 16px; 
   }
 }
+
