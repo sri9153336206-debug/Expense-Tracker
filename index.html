@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Exp">
+        <header>
+            <h1>💸Expense Tracker</h1>
+            <p>Track your income and expense.</p>
+        </header>
+
+        <!-- Showing Balance, Income, and Expenses -->
+
+        <div class="containers">
+            <div class="container">
+                <h4>Balance</h4>
+                <p id="balance" class="green">₹0.00</p>
+            </div>
+            <div class="container">
+                <h4>Income</h4>
+                <p id="income" class="green">₹0.00</p>
+            </div>
+            <div class="container">
+                <h4>Expenses</h4>
+                <p id="expense" class="red">₹0.00</p>
+            </div>
+        </div>
+
+        <!-- Add Transaction -->
+
+        <div class="transaction">
+            <h3>Add Transaction</h3>
+
+            <form id="form">
+                <div class="row">
+                    <div>
+                        <label>Description</label>
+                        <input type="text" id="description" placeholder="Enter description" required>
+                    </div>
+
+                    <div>
+                        <label>Amount</label>
+                        <input type="number" id="amount" placeholder="0.00" required>
+                    </div>
+                </div>
+
+                <label>Type</label>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <button type="submit" id="add-trans">+ Add Transaction</button>
+            </form>
+        </div>
+
+        <!-- History -->
+
+        <div class="history">
+            <h3>Transaction history</h3>
+            <ul id="list">
+                <p class="empty">No transaction yet. Add your first transaction above.</p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
